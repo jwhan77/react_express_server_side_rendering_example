@@ -1,13 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Hello from "./hello";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello world!</h1>
-      <div>Rendering app.js</div>
-    </div>
-  );
-};
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.hydrate(<Hello />, document.getElementById("root"));
